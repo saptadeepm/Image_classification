@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+body {
+  width: 100vw; /* 100% viewport width */
+  height: 100vh; /* 100% viewport height */
+  overflow-x: hidden;
+  background: #ebfceb; /* background color */
+  font-size: 1.2rem; /* default font-size */
+  font-family: sans-serif;
+}
+
+/* .container */
+.container {
+    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left; /* now this is for vertically center. Because of flex-direction: column; */
+  align-items:baseline; /* horizontally center */
+}
+
+/* .image-box */
+.image-box {
+  background-color: #fff;
+  margin: 30px 0px 10px 0px; /* outer spacing. Order -> top right bottom left*/
+  display: flex;
+  flex-direction: column;
+}
+
+/* .image */
+.image {
+  width: 360px; /* the more you increase width, the more precise the prediction will be! */
+  margin-bottom: 15px;
+}
+
+/* .label-text */
+.label-text {
+  font-size: 1rem;
+  max-width: 200px;
+  margin-bottom: 7px;
+}
+
+/* .accuracy-text */
+.accuracy-text {
+  margin-bottom: 2px;
+}
+
+/* .predict-btn */
+.predict-btn {
+  background-color: #00ff00;
+  padding: 12px;
+  margin: 20px 0px; /* top-bottom left-right */
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+  border: none;
+  font-size: 18px;
+}
+
+/* .upload-btn styles will go here */
+/* hide the default upload button */
+.upload-btn::-webkit-file-upload-button {
+  display: none;
+}
+
+/* create our own upload button */
+.upload-btn::before {
+  content: 'Upload Image';
+  display: block;
+  background-color: yellow;
+  font-size: 1.3rem;
+  padding: 5px 8px;
+  margin: 15px 0px 0px 0px;
+  border-radius: 3px; /* for curved edges */
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* remove the "outline" and "border" */
+input[type="file" i] {
+  outline: none;
+  border: none;
+}
+
+

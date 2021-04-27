@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to our CSS stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- CDN Link to the ml5 library -->
+  <script type="text/javascript" src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <title>Image Classification</title>
+</head>
+<body>
+
+  <!-- container -->
+  <div class="container">
+    
+    <h2>Upload photo to classify</h2>
+
+    <!-- image-box -->
+    <div class="image-box">
+      <img src=" " class="image">
+      <!-- label-text -->
+      <p class="label-text"> </p>
+      <!-- accuracy-text -->
+      <p class="accuracy-text"></p>
+    </div>
+    <!-- upload-btn will go here -->
+    <input id="btnx" style="margin-bottom: 25px;display: none;" type="file" class="upload-btn" />
+    <label for="btnx" style="background: rgb(82, 157, 255);padding: 12px;border-radius: 4px;">Upload image</label>
+    
+    <!-- predict-btn (disabled) -->
+    <button class="predict-btn" disabled>Predict</button>
+
+  </div>
+  
+  <!-- Link to our Javascript file  -->
+  <script src="script.js"></script>
+</body>
+</html>
